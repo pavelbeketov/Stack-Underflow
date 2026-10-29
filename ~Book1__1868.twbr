@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1022.1645                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...creator-author-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' original-version='18.1' source-build='2026.3.0 (20263.26.1022.1645)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='QueryResults' inline='true' name='federated.0r0y34z0ljp4qv13xkqan0jg1tkt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='QueryResults' name='textscan.1ko4a6p1hblm2f1em2syv0jba40q'>
+            <connection class='textscan' directory='D:/Project/Stack Underflow' filename='QueryResults.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ko4a6p1hblm2f1em2syv0jba40q' name='QueryResults.csv' table='[QueryResults#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='integer' name='month' ordinal='1' />
+            <column datatype='integer' name='questions' ordinal='2' />
+            <column datatype='integer' name='answers' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[QueryResults.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ru&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₽&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ru_RU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[QueryResults.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[QueryResults.csv_D41834B939DF450C86E2C2DC63719287]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[QueryResults.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[QueryResults.csv_D41834B939DF450C86E2C2DC63719287]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>questions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[questions]</local-name>
+            <parent-name>[QueryResults.csv]</parent-name>
+            <remote-alias>questions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[QueryResults.csv_D41834B939DF450C86E2C2DC63719287]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>answers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[answers]</local-name>
+            <parent-name>[QueryResults.csv]</parent-name>
+            <remote-alias>answers</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[QueryResults.csv_D41834B939DF450C86E2C2DC63719287]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Date' datatype='date' name='[Calculation_1607546767273986]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='MAKEDATE([year], [month], 1)' />
+      </column>
+      <column caption='QueryResults.csv' datatype='table' name='[__tableau_internal_object_id__].[QueryResults.csv_D41834B939DF450C86E2C2DC63719287]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[answers]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[questions]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[QueryResults.csv_D41834B939DF450C86E2C2DC63719287]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:QueryResults.csv_D41834B939DF450C86E2C2DC63719287:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[answers]' derivation='Sum' name='[sum:answers:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[questions]' derivation='Sum' name='[sum:questions:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/paulb/AppData/Local/Temp/TableauTemp/#TableauTemp_0avw6ib0qgzxkt1fwslzo039jp2g.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/28/2026 08:54:07 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>QueryResults.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[QueryResults.csv_D41834B939DF450C86E2C2DC63719287]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>1</ordinal>
+              <family>QueryResults.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[QueryResults.csv_D41834B939DF450C86E2C2DC63719287]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>questions</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[questions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>questions</remote-alias>
+              <ordinal>2</ordinal>
+              <family>QueryResults.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>220</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[QueryResults.csv_D41834B939DF450C86E2C2DC63719287]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>answers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[answers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>answers</remote-alias>
+              <ordinal>3</ordinal>
+              <family>QueryResults.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>220</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[QueryResults.csv_D41834B939DF450C86E2C2DC63719287]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#20bc2b'>
+              <bucket>&quot;[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[sum:questions:qk]&quot;</bucket>
+            </map>
+            <map to='#214ef2'>
+              <bucket>&quot;[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[sum:answers:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[__tableau_internal_object_id__].[cnt:QueryResults.csv_D41834B939DF450C86E2C2DC63719287:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Israel&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='QueryResults.csv' id='QueryResults.csv_D41834B939DF450C86E2C2DC63719287'>
+            <properties context=''>
+              <relation connection='textscan.1ko4a6p1hblm2f1em2syv0jba40q' name='QueryResults.csv' table='[QueryResults#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='integer' name='month' ordinal='1' />
+                  <column datatype='integer' name='questions' ordinal='2' />
+                  <column datatype='integer' name='answers' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='QueryResults' name='federated.0r0y34z0ljp4qv13xkqan0jg1tkt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0r0y34z0ljp4qv13xkqan0jg1tkt'>
+            <column caption='Date' datatype='date' name='[Calculation_1607546767273986]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='MAKEDATE([year], [month], 1)' />
+            </column>
+            <column datatype='integer' name='[answers]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[month]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[questions]' role='measure' type='quantitative' />
+            <column-instance column='[answers]' derivation='Sum' name='[sum:answers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[questions]' derivation='Sum' name='[sum:questions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1607546767273986]' derivation='Month-Trunc' name='[tmn:Calculation_1607546767273986:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[sum:answers:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[sum:questions:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-color' id='refline0' value='#e15759af' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dashed' />
+            <format attr='stroke-color' id='refline1' value='#edc94889' />
+            <format attr='vertical-align' id='refline0' value='top' />
+            <format attr='vertical-align' id='refline1' value='top' />
+            <format attr='font-weight' id='refline0' value='bold' />
+            <format attr='font-size' id='refline0' value='15' />
+            <format attr='font-weight' id='refline1' value='bold' />
+            <format attr='font-size' id='refline1' value='12' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[tmn:Calculation_1607546767273986:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label='ChatGPT Launch' label-type='custom' scope='per-table' value='#2022-11-30 00:00:00#' value-column='[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[tmn:Calculation_1607546767273986:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[tmn:Calculation_1607546767273986:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label='COVID-19' label-type='custom' scope='per-table' value='#2020-03-11 00:00:00#' value-column='[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[tmn:Calculation_1607546767273986:qk]' z-order='2' />
+          </pane>
+        </panes>
+        <rows>[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[Multiple Values]</rows>
+        <cols>[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[tmn:Calculation_1607546767273986:qk]</cols>
+      </table>
+      <simple-id uuid='{D8DE9896-47BF-42B0-82A3-36D49B3CECBD}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.0r0y34z0ljp4qv13xkqan0jg1tkt].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6EAF51A0-C3EC-4C43-8D63-69EDC0FDA630}' />
+    </window>
+  </windows>
+</workbook>
